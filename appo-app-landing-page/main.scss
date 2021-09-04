@@ -1,0 +1,560 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import "medias.scss";
+header {
+    border-bottom: 1px solid gray;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #223047;
+        h1 {
+            font-weight: bold;
+            color: #19ebea;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                color: white;
+                padding: 15px;
+                i {
+                    font-weight: lighter;
+                    padding-left: 10px;
+                }
+            }
+        }
+        button {
+            color: #383252;
+            background: #00fff0;
+            border: none;
+            padding: 20px 41px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 15px;
+        }
+    }
+}
+.choose-way {
+    background-color: #223047;
+    display: grid;
+    grid-template-columns: 450px 280px;
+    justify-content: center;
+    grid-gap: 165px;
+    @include for-phone-only {
+        grid-template-columns: 400px;
+        grid-template-rows: 400px;
+        text-align: center;
+        grid-gap: unset;
+        justify-content: unset;
+    }
+    .choose-way__content {
+        align-self: center;
+        p {
+            color: white;
+            &:first-of-type {
+                font-size: 30px;
+                width: 63%;
+                line-height: 40px;
+                padding-bottom: 55px;
+                @include for-phone-only {
+                    width: 100%;
+                }
+            }
+            &:last-of-type {
+                width: 90%;
+                font-weight: lighter;
+                color: gray;
+                font-size: 15px;
+                line-height: 30px;
+                padding-bottom: 50px;
+                @include for-phone-only {
+                    width: 100%;
+                }
+            }
+        }
+        button {
+            color: white;
+            background-color: #223047;
+            padding: 10px 35px;
+            border: 1px solid white;
+            border-radius: 15px;
+            &:hover {
+                background-color: #19ebe9;
+                color: black;
+            }
+            &:last-of-type {
+                margin-left: 15px;
+            }
+        }
+    }
+    .choose-way-phone-picture {
+        position: relative;
+        top: 90px;
+    }
+}
+.white-space {
+    height: 200px;
+}
+.choose-way-description {
+    .heading-content {
+        text-align: center;
+        font-size: 22px;
+        width: 18%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        @include for-phone-only {
+            width: 100%;
+        }
+    }
+    .middle-line {
+        border-bottom: 4px solid #00fff0;
+        width: 7%;
+        margin: 0 auto;
+        @include for-phone-only {
+            width: 20%;
+        }
+    }
+    .choose-way-description__content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: 320px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 65px;
+        grid-gap: 20px;
+        @include for-phone-only {
+            grid-template-columns: unset;
+            grid-template-rows: repeat(4, 320px);
+        }
+        div {
+            width: 270px;
+            height: 300px;
+            border: 4px solid #fafafb;
+            border-radius: 5px;
+            p {
+                &:first-of-type {
+                    font-weight: bold;
+                    padding: 15px 0;
+                }
+                &:last-of-type {
+                    font-weight: lighter;
+                    color: gray;
+                    line-height: 25px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+.smartphone-info-wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    align-items: center;
+    background-color: #f5f6fa;
+    @include for-phone-only {
+        display: unset;
+    }
+    .smartphone-info-wrapper__painted-place {
+        height: 350px;
+        background-color: #323a4d;
+    }
+    .smartphone-info-wrapper__smartphone-content {
+        p {
+            &:first-of-type {
+                width: 30%;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 35px;
+                padding-left: 100px;
+                @include for-phone-only {
+                    padding-top: 30px;
+                }
+            }
+            &:last-of-type {
+                width: 65%;
+                line-height: 25px;
+                padding-left: 100px;
+                padding-top: 40px;
+            }
+        }
+    }
+}
+.code-wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    @include for-phone-only {
+        grid-template-columns: 400px;
+        grid-template-rows: 400px;
+    }
+    .code-wrapper__content {
+        text-align: right;
+        p {
+            &:first-of-type {
+                font-weight: bold;
+                font-size: 22px;
+                padding-right: 75px;
+                padding-bottom: 45px;
+                @include for-phone-only {
+                    padding-right: unset;
+                    text-align: center;
+                }
+            }
+            &:last-of-type {
+                line-height: 30px;
+                width: 408px;
+                margin: 0 auto;
+                padding-left: 200px;
+                padding-bottom: 45px;
+                @include for-phone-only {
+                    padding-left: unset;
+                    text-align: center;
+                }
+            }
+        }
+        button {
+            margin-right: 75px;
+            background-color: #00fff0;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 51px;
+            font-weight: bold;
+            @include for-phone-only {
+                margin-right: 45px;
+                font-size: 20px;
+            }
+        }
+    }
+    .code-wrapper__picture {
+        img {
+            @include for-phone-only {
+                width: 400px;
+            }
+        }
+    }
+}
+.big-phone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    @include for-phone-only {
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px;
+    }
+    .big-phone__content {
+        .free-to-use {
+            height: 120px;
+            background-color: #00ecdc;
+        }
+        .free-to-use__content {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            border: none;
+            box-shadow: none;
+        }
+        div {
+            width: 500px;
+            height: 60px;
+            border: 1px solid gray;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 2px 4px 19px 3px rgba(0, 0, 0, 0.86);
+            @include for-phone-only {
+                width: 370px;
+            }
+            p {
+                @include for-phone-only {
+                    font-size: 18px;
+                }
+            }
+            &:hover {
+                background-color: #00ecdc;
+            }
+            img {
+                padding: 15px;
+                &:hover {
+                    color: #00ecdc;
+                }
+            }
+        }
+    }
+    .big-phone__image {
+        img {
+            position: relative;
+            top: 38px;
+            @include for-phone-only {
+                width: 400px;
+                top: unset;
+            }
+        }
+    }
+}
+.everything-you-need {
+    background-color: #f5f6fa;
+    display: grid;
+    grid-template-columns: 50% 37%;
+    grid-gap: 100px;
+    align-items: center;
+    @include for-phone-only {
+        grid-template-columns: 400px;
+        grid-template-rows: 400px 400px;
+    }
+    .everything-you-need__content {
+        text-align: right;
+        p {
+            &:first-of-type {
+                font-weight: bold;
+                font-size: 25px;
+                @include for-phone-only {
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+            }
+            &:last-of-type {
+                line-height: 30px;
+                font-weight: lighter;
+                color: gray;
+                @include for-phone-only {
+                    text-align: center;
+                }
+            }
+        }
+        ul {
+            @include for-phone-only {
+                text-align: center;
+            }
+            i {
+                background-color: #00fff0;
+                border-radius: 50%;
+                padding: 3px;
+                margin-right: 10px;
+                text-align: center;
+            }
+            li {
+                padding: 7px;
+            }
+        }
+    }
+    .everything-you-need__img {
+        padding-top: 60px;
+        @include for-phone-only {
+            padding-top: unset;
+            justify-self: center;
+            padding-left: 35px;
+        }
+    }
+}
+.video-player {
+    background-color: #223047;
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+    padding-bottom: 170px;
+    p {
+        &:first-of-type {
+            font-weight: lighter;
+            font-size: 25px;
+            padding: 20px;
+        }
+        &:last-of-type {
+            width: 33%;
+            line-height: 30px;
+            margin: 0 auto;
+            @include for-phone-only {
+                width: unset;
+            }
+        }
+    }
+}
+.satisfied-users {
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 180px;
+    p {
+        padding-top: 35px;
+        padding-bottom: 60px;
+        @include for-phone-only {
+            font-size: 25px;
+        }
+    }
+    button {
+        border: none;
+        padding: 15px 35px;
+        background-color: #00feef;
+        @include for-phone-only {
+            font-size: 25px;
+        }
+    }
+}
+.satisfied-users-content {
+    background-color: #223047;
+    padding: 130px;
+    line-height: 25px;
+    p {
+        color: #0bcac3;
+        font-weight: bold;
+        width: 55%;
+        margin: 0 auto;
+        @include for-phone-only {
+            width: 100%;
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+}
+.double-phone {
+    background-color: #f5f6fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include for-phone-only {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .double-phone__content {
+        p {
+            &:first-of-type {
+                font-weight: bold;
+                font-size: 30px;
+                padding-bottom: 30px;
+                @include for-phone-only {
+                    text-align: center;
+                    padding-top: 20px;
+                }
+            }
+            &:last-of-type {
+                color: gray;
+                width: 53%;
+                line-height: 25px;
+                padding-bottom: 30px;
+                @include for-phone-only {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .app-stores {
+        @include for-phone-only {
+            text-align: center;
+        }
+        img {
+            margin-right: 25px;
+        }
+    }
+    button {
+        border: none;
+        padding: 15px 110px;
+        background-color: #00fff0;
+        position: relative;
+        top: 235px;
+        right: 175px;
+        @include for-phone-only {
+            position: unset;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+    }
+}
+.company-info {
+    display: grid;
+    grid-template-columns: repeat(5, 275px);
+    justify-content: right;
+    padding-top: 120px;
+    @include for-phone-only {
+        grid-template-columns: 272px;
+        grid-template-rows: repeat(4, 250px);
+    }
+    ul {
+        @include for-phone-only {
+            font-size: 25px;
+        }
+        li {
+            &:first-of-type {
+                font-weight: bold;
+                padding-bottom: 30px;
+                color: black;
+            }
+            padding: 5px;
+            color: #c7cfdc;
+        }
+    }
+    h3 {
+        text-align: center;
+        display: unset;
+    }
+}
+.get-in-touch {
+    padding-top: 100px;
+    text-align: center;
+    h3 {
+        padding-bottom: 30px;
+        @include for-phone-only {
+            font-size: 25px;
+        }
+    }
+    p {
+        color: #c7cfdc;
+        @include for-phone-only {
+            font-size: 25px;
+        }
+    }
+    .empty-field__content {
+        button {
+            background-color: #00fff0;
+            border: none;
+            padding: 8px;
+            position: relative;
+            bottom: 15px;
+            margin-left: 10px;
+            @include for-phone-only {
+                position: unset;
+                margin-left: unset;
+                margin-top: 20px;
+                font-size: 20px;
+                padding: 20px 30px;
+            }
+        }
+    }
+    .empty-field {
+        width: 500px;
+        height: 35px;
+        background-color: #f5f6fa;
+        cursor: text;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: inline-block;
+        @include for-phone-only {
+            width: 370px;
+        }
+    }
+}
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #223047;
+    margin-top: 90px;
+    padding: 20px;
+    p {
+        color: #00fff1;
+    }
+    .links {
+        i {
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+        }
+    }
+}
